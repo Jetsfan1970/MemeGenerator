@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meme Generator</title>
+</head>
+<body>
+    <h1>Don't Let Your Memes, be Dreams.....</h1>
+    <h2>Create Your Perfect Meme Here!</h2>
+
+ 
+    <form action = "" id="memeTemplate">
+        <label for="subUrl">Image URL:</label>
+        <input type="text" id="subUrl" class="meme-data" placeholder="Put URL Here" minlength="1" pattern="https?://.+" required>
+        <br>
+        <label for="topText">Top Text:</label>
+        <input type="text" id="topText" class="meme-data" placeholder="Top Text" minlength="1" required>
+        <br>
+        <label for="bottomText">Bottom Text:</label>
+        <input type="text" id="bottomText" class="meme-data" placeholder="Bottom Text" minlength="1" required>
+        <br>
+        <button id="createBtn" type="submit">Create Your Dream Meme!</button>
+    </form>
+
+    <div id="memeSpot"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
